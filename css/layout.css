@@ -485,7 +485,6 @@
     display: inline-block;
     margin: 0.15rem 0;
     font-size: 0.95em;
-    box-shadow: 0 2px 0 var(--highlight-border);
 }
 
 .profile__description {
