@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hoja de vida personal de Mamani Apaza Santos Luis, estudiante de Ingeniería de Sistemas.">
+    <meta name="author" content="Mamani Apaza Santos Luis">
+    <title>Hoja de Vida | Santos Luis Mamani Apaza</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+</head>
+<body>
+    <input class="theme-toggle-input" type="checkbox" id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro">
+
+    <div class="site-shell">
+        <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+        <header class="hero" id="inicio">
+            <div class="hero__toolbar">
+                <span class="hero__badge">HOJA DE VIDA</span>
+                <label class="theme-toggle" for="theme-toggle">
+                    <span class="theme-toggle__text">Modo claro / oscuro</span>
+                    <span class="theme-toggle__switch" aria-hidden="true"><span></span></span>
+                </label>
+            </div>
+
+            <div class="profile">
+                <div class="profile__photo-wrap">
+                    <img class="profile__photo" src="assets/images/foto-perfil.jpeg" alt="Fotografía de Mamani Apaza Santos Luis" width="190" height="190">
+                </div>
+                <p class="profile__eyebrow">
+                    Ingeniería de Sistemas
+                </p>
+                <h1>Mamani Apaza Santos Luis</h1>
+                <p class="profile__role">
+                    <mark>Estudiante de Ingeniería de Sistemas</mark>
+                </p>
+                <p class="profile__description">
+                    Me interesa <mark>el desarrollo de software</mark>, la programación y las bases de datos. Disfruto aprender mediante proyectos académicos y crear soluciones digitales claras, útiles y eficientes.
+                </p>
+
+                <address class="contact-strip">
+                    <a href="mailto:santos.mamani.a@ucb.edu.bo">santos.mamani.a@ucb.edu.bo</a>
+                    <a href="tel:+59176547087">+591 76547087</a>
+                    <span>La Paz, Bolivia</span>
+                    <a href="https://github.com/SantosMamani14" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/santos-luis-mamani-apaza-986040380" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </address>
+            </div>
+            <blockquote class="hero__quote">
+                <p>
+                    "La libertad está en ser dueños de la propia vida."
+                </p>
+                <footer>— <cite>Platón</cite></footer>
+            </blockquote>
+
+            <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="primary-navigation" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#inicio" aria-current="page">Inicio</a></li>
+                    <li><a href="trayectoria.html#formacion">Trayectoria</a></li>
+                    <li><a href="habilidades.html#tecnicas-title">Habilidades</a></li>
+                    <li><a href="proyectos.html#contenido">Proyectos</a></li>
+                    <li><a href="multimedia.html#recursos-multimedia">Multimedia</a></li>
+                    <li><a href="contacto.html#contenido">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="contenido">
+            <section class="section" id="perfil" aria-labelledby="perfil-title">
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <div>
+                        <p class="section-kicker">
+                            Presentación
+                        </p>
+                        <h2 id="perfil-title">
+                            Perfil profesional
+                        </h2>
+                    </div>
+                </div>
+                <article class="card card--featured">
+                    <h3>Sobre mí</h3>
+                    <p>
+                        Soy <strong>Mamani Apaza Santos Luis</strong>, bachiller de la Unidad Educativa Jose Antonio Paredes Candia (promoción 2024) y estudiante de <strong>Ingeniería de Sistemas</strong> en la Universidad Católica Boliviana “San Pablo”. Mi formación me permite explorar distintas áreas de la tecnología y desarrollar una base sólida para mi futuro profesional.
+                    </p>
+                    <p>
+                        Me apasiona la lógica de programación y la construcción de soluciones de software desde cero. Tengo bases en <strong>Java</strong> y <strong>C++</strong>, conocimientos iniciales en <strong>Python</strong> y experiencia académica con bases de datos SQL. También me interesa comprender cómo se organizan los sistemas y cómo transformar una necesidad en una solución práctica.
+                    </p>
+                    <div class="highlight-list">
+                        <span>Razonamiento lógico</span><span>Programación orientada a objetos</span><span>Aprendizaje continuo</span>
+                    </div>
+                </article>
+                <article class="card profile-more">
+                    <p>
+                        Soy estudiante de Ingeniería de Sistemas y me interesa aprender cómo el software, las bases de datos y la tecnología pueden resolver necesidades concretas. Disfruto investigar, practicar y aplicar lo aprendido en proyectos académicos.
+                    </p>
+                    <details>
+                        <summary>Ver más sobre mi perfil</summary>
+                        <p>
+                            Me interesa continuar desarrollando mis conocimientos técnicos y profesionales mediante proyectos académicos y experiencias prácticas, fortaleciendo paso a paso mis habilidades de programación y análisis.
+                        </p>
+                    </details>
+                </article>
+            </section>
+
+            <aside class="card profile-aside" aria-label="Objetivo profesional">
+                <div>
+                    <p class="section-kicker">Mi objetivo</p>
+                    <h2>Aprender creando soluciones útiles.</h2>
+                    <p>Quiero fortalecer mis habilidades en desarrollo de software y aplicar lo que aprendo en proyectos claros, funcionales y bien pensados.</p>
+                </div>
+                <a class="aside-link" href="proyectos.html#contenido">Explorar proyectos <span aria-hidden="true">→</span></a>
+            </aside>
+
+            <section class="section section--compact location-section" aria-labelledby="location-title">
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <div>
+                        <p class="section-kicker">Mi ciudad</p>
+                        <h2 id="location-title">Vivo y estudio en La Paz</h2>
+                    </div>
+                </div>
+                <div class="location-card card">
+                    <div class="location-card__details">
+                        <p class="location-card__place">
+                            <strong>La Paz</strong>
+                            <span>Departamento de La Paz, Bolivia</span>
+                        </p>
+                        <p>La Paz es la ciudad donde vivo y curso Ingeniería de Sistemas en la Universidad Católica Boliviana “San Pablo”. Aquí continúo mi formación académica y desarrollo mis intereses en tecnología y programación.</p>
+                        <p class="location-privacy">El mapa muestra una referencia del centro urbano; no indica una dirección particular ni accede al GPS de tu dispositivo.</p>
+                        <p class="location-status" data-location-status role="status" aria-live="polite">Preparando mapa de La Paz...</p>
+                        <a class="location-link" href="https://www.openstreetmap.org/?mlat=-16.5000&amp;mlon=-68.1500#map=12/-16.5000/-68.1500" target="_blank" rel="noopener noreferrer">Ver La Paz en OpenStreetMap</a>
+                    </div>
+                    <div class="location-map" id="location-map" role="region" aria-label="Mapa de referencia del centro de La Paz, Bolivia"></div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <p><strong>Mamani Apaza Santos Luis</strong> · Ingeniería de Sistemas</p>
+            <a href="#inicio">Volver al inicio</a>
+        </footer>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+/* =========================================================
+   COMPONENTS.CSS
+   Tarjetas y componentes de contenido
+   ========================================================= */
+
+.card {
+    padding: 1.5rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background-color var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-strong);
+}
+
+.card h3 {
+    margin-bottom: 0.7rem;
+    color: var(--accent);
+}
+
+.card p + p {
+    margin-top: 0.55rem;
+}
+
+.card--featured {
+    border-top: 4px solid var(--accent);
+}
+
+/* =========================================================
+   PERFIL DESTACADO
+   ========================================================= */
+
+.highlight-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 1.25rem;
+}
+
+.highlight-list span {
+    padding: 0.45rem 0.7rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background: var(--bg-soft);
+    color: var(--text-main);
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+/* =========================================================
+   FORMACIÓN
+   ========================================================= */
+
+.timeline-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.year {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+/* =========================================================
+   EXPERIENCIA / PROYECTOS ACADÉMICOS
+   ========================================================= */
+
+.card__top {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 0.8rem;
+}
+
+.card__top h3 {
+    margin-bottom: 0;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.28rem 0.55rem;
+    border-radius: 999px;
+    background: var(--color-primary-dark);
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* =========================================================
+   HABILIDADES
+   ========================================================= */
+
+.skill {
+    padding: 1.15rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow);
+}
+
+.skill > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.skill > div span {
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.skill > div strong {
+    color: var(--accent);
+}
+
+.clean-list {
+    padding-left: 1.1rem;
+}
+
+.clean-list li::marker {
+    color: var(--accent);
+}
+
+/* =========================================================
+   CERTIFICACIONES
+   ========================================================= */
+
+.course-list {
+    display: grid;
+    gap: 0.9rem;
+    padding: 0;
+    list-style: none;
+    counter-reset: courses;
+}
+
+.course-list li {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    margin: 0;
+    padding: 1.1rem 1.25rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow);
+}
+
+.course-list li > span {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.course-list strong {
+    color: var(--text-main);
+}
+
+.course-list p {
+    margin-top: 0.2rem;
+}
+
+/* =========================================================
+   TABLA DE IDIOMAS
+   ========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow);
+}
+
+/* =========================================================
+   PROYECTOS DESTACADOS
+   ========================================================= */
+
+.project-card {
+    min-height: 100%;
+}
+
+.project-card .tag {
+    margin-bottom: 0.8rem;
+}
+
+.project-card .muted {
+    margin-top: 0.7rem;
+}
+
+/* =========================================================
+   MULTIMEDIA
+   ========================================================= */
+
+.media-card {
+    min-width: 0;
+}
+
+.media-card figure {
+    width: 100%;
+    min-width: 0;
+}
+
+.media-card img,
+.media-card video,
+.media-card audio {
+    width: 100%;
+}
+
+.media-card img,
+.media-card video {
+    display: block;
+    max-height: none;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-small);
+}
+
+.media-card img {
+    height: auto;
+}
+
+.media-card video {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: contain;
+    background: #000000;
+}
+
+.media-card audio {
+    display: block;
+    margin-top: 1rem;
+}
+
+/* =========================================================
+   CONTACTO
+   ========================================================= */
+
+.contact-form {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-grid p {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin: 0;
+}
+
+.field-error {
+    min-height: 1.1em;
+    color: var(--danger);
+    font-size: 0.8rem;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"],
+select[aria-invalid="true"] {
+    border-color: var(--danger);
+}
+
+.check-field {
+    grid-column: 1 / -1;
+    display: grid !important;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 0.6rem !important;
+}
+
+.check-field .field-error {
+    grid-column: 2;
+}
+
+.check-field input {
+    margin-top: 0.35rem;
+}
+
+.check-field label {
+    font-size: 0.86rem;
+    font-weight: 500;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    margin-top: 1.2rem;
+}
+
+.form-actions button {
+    padding: 0.78rem 1.2rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-small);
+    background: var(--action-bg);
+    color: var(--action-text);
+    font-family: var(--font-main);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition), border-color var(--transition);
+}
+
+.button-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--action-bg);
+    border-radius: var(--radius-small);
+    background: var(--action-bg);
+    color: var(--action-text);
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color var(--transition), color var(--transition), transform var(--transition);
+}
+
+.button-link:hover {
+    background: var(--action-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.button-link--secondary {
+    background: transparent;
+    color: var(--accent);
+}
+
+.button-link--secondary:hover {
+    background: var(--bg-soft);
+    color: var(--accent-hover);
+}
+
+.button-link[hidden] {
+    display: none;
+}
+
+.form-actions button:hover {
+    background: var(--action-hover);
+    transform: translateY(-2px);
+}
+
+.form-actions .button--secondary {
+    background: transparent;
+    border-color: var(--border-color);
+    color: var(--text-main);
+}
+
+.form-actions .button--secondary:hover {
+    background: var(--bg-soft);
+    color: var(--text-main);
+}
+
+.form-status {
+    min-height: 1.5rem;
+    margin-top: 1rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.form-status[data-state="error"] {
+    color: var(--danger);
+}
+
+.form-status[data-state="success"] {
+    color: var(--success);
+}
+
+/* =========================================================
+   DIALOG
+   ========================================================= */
+
+dialog {
+    width: min(600px, 90%);
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    background: var(--bg-surface);
+    color: var(--text-main);
+    box-shadow: var(--shadow-strong);
+}
+
+dialog::backdrop {
+    background: rgba(7, 18, 38, 0.68);
+    backdrop-filter: blur(4px);
+}
+
+.alert-dialog {
+    width: min(440px, calc(100% - 2rem));
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-large);
+    text-align: center;
+    animation: alert-pop-in 0.24s ease-out both;
+}
+
+.alert-dialog[open] {
+    display: grid;
+    justify-items: center;
+    gap: 0.8rem;
+}
+
+.alert-dialog__icon {
+    display: grid;
+    width: 4rem;
+    height: 4rem;
+    place-items: center;
+    border: 3px solid var(--success);
+    border-radius: 50%;
+    color: var(--success);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.alert-dialog[data-state="warning"] .alert-dialog__icon {
+    border-color: var(--warning);
+    color: var(--warning);
+}
+
+.alert-dialog .section-kicker {
+    margin: 0;
+}
+
+.alert-dialog h2 {
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+}
+
+.alert-dialog > p:not(.section-kicker) {
+    max-width: 34ch;
+}
+
+.alert-dialog__button {
+    min-width: 140px;
+    min-height: 44px;
+    margin-top: 0.4rem;
+    padding: 0.65rem 1.2rem;
+    border: 0;
+    border-radius: var(--radius-small);
+    background: var(--action-bg);
+    color: var(--action-text);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+.alert-dialog__button:hover {
+    background: var(--action-hover);
+    transform: translateY(-2px);
+}
+
+.alert-dialog__button:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+@keyframes alert-pop-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .alert-dialog {
+        animation: none;
+    }
+}

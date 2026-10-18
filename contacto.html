@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto de Santos Luis Mamani Apaza.">
+    <title>Contacto | Santos Luis Mamani Apaza</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+    <header class="page-header">
+        <div class="page-header__top">
+            <a class="page-brand" href="index.html">Santos Luis Mamani Apaza <span>CV profesional</span></a>
+            <label class="page-theme-toggle" for="theme-toggle">
+                <input id="theme-toggle" type="checkbox" aria-label="Cambiar entre modo claro y oscuro">
+                <span>Modo oscuro</span>
+            </label>
+        </div>
+        <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menú de navegación">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="page-nav" id="primary-navigation" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="trayectoria.html">Trayectoria</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a class="active" href="contacto.html" aria-current="page">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="contenido" class="page-main">
+        <header class="page-title">
+            <p class="section-kicker">Comunicación</p>
+            <h1>Contacto</h1>
+            <p>Si deseas conversar sobre un proyecto académico u oportunidad de aprendizaje, puedes escribirme.</p>
+        </header>
+
+        <section class="github-profile card" data-github-profile aria-labelledby="github-profile-title">
+            <img class="github-profile__avatar" data-profile-avatar alt="" width="76" height="76" hidden>
+            <div class="github-profile__content">
+                <p class="section-kicker">Desarrollo público</p>
+                <h2 id="github-profile-title">Perfil de GitHub</h2>
+                <p class="github-profile__bio" data-profile-bio>Consulta mi perfil público de desarrollo.</p>
+                <p class="github-profile__stats">
+                    <span><strong data-profile-followers>—</strong> seguidores</span>
+                    <span class="github-profile__status" data-profile-status role="status" aria-live="polite">Cargando perfil público...</span>
+                </p>
+            </div>
+            <div class="github-profile__actions">
+                <a class="button-link" data-profile-link href="https://github.com/SantosMamani14" target="_blank" rel="noopener noreferrer">Visitar GitHub</a>
+                <button class="button-link button-link--secondary" data-profile-retry type="button" hidden>Reintentar</button>
+            </div>
+        </section>
+
+        <section class="contact-layout" aria-label="Datos y formulario de contacto">
+            <address class="card contact-details">
+                <h2>Datos de contacto</h2>
+                <p><strong>Correo:</strong><br><a href="mailto:santos.mamani.a@ucb.edu.bo">santos.mamani.a@ucb.edu.bo</a></p>
+                <p><strong>Teléfono:</strong><br><a href="tel:+59176547087">+591 76547087</a></p>
+                <p><strong>Ubicación:</strong><br>La Paz, Bolivia</p>
+                <p><strong>GitHub:</strong><br><a href="https://github.com/SantosMamani14" target="_blank" rel="noopener noreferrer">Perfil de GitHub</a></p>
+                <p><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/santos-luis-mamani-apaza-986040380" target="_blank" rel="noopener noreferrer">Perfil de LinkedIn</a></p>
+            </address>
+
+            <form class="card contact-form" id="contact-form" action="#" method="post" novalidate>
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <div class="form-grid">
+                        <p>
+                            <label for="nombre">Nombre completo *</label>
+                            <input id="nombre" name="nombre" type="text" required minlength="3" maxlength="60" placeholder="Ej. María Fernández" aria-describedby="nombre-error">
+                            <span class="field-error" id="nombre-error" aria-live="polite"></span>
+                        </p>
+                        <p>
+                            <label for="email">Correo electrónico *</label>
+                            <input id="email" name="email" type="email" required placeholder="correo@ejemplo.com" aria-describedby="email-error">
+                            <span class="field-error" id="email-error" aria-live="polite"></span>
+                        </p>
+                        <p>
+                            <label for="telefono">Teléfono / WhatsApp</label>
+                            <input id="telefono" name="telefono" type="tel" pattern="(\+591|591)? ?[67][0-9]{3} ?[0-9]{4}" placeholder="+591 7000 0000" aria-describedby="telefono-error">
+                            <span class="field-error" id="telefono-error" aria-live="polite"></span>
+                        </p>
+                        <p>
+                            <label for="motivo">Motivo *</label>
+                            <select id="motivo" name="motivo" required aria-describedby="motivo-error">
+                                <option value="" disabled selected>Selecciona un motivo</option>
+                                <option>Oferta laboral / práctica</option>
+                                <option>Consulta sobre un proyecto</option>
+                                <option>Tema académico</option>
+                                <option>Otro</option>
+                            </select>
+                            <span class="field-error" id="motivo-error" aria-live="polite"></span>
+                        </p>
+                        <p class="form-field--full">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required minlength="10" placeholder="Escribe aquí tu mensaje..." aria-describedby="mensaje-error"></textarea>
+                            <span class="field-error" id="mensaje-error" aria-live="polite"></span>
+                        </p>
+                        <p class="check-field">
+                            <input id="aceptar" name="aceptar" type="checkbox" required aria-describedby="aceptar-error">
+                            <label for="aceptar">Acepto que mis datos sean enviados mediante EmailJS y utilizados únicamente para responder este contacto. *</label>
+                            <span class="field-error" id="aceptar-error" aria-live="polite"></span>
+                        </p>
+                    </div>
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit">Enviar mensaje</button>
+                    <button type="reset" class="button--secondary">Limpiar campos</button>
+                </div>
+                <p class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
+            </form>
+        </section>
+
+        <dialog class="alert-dialog" id="form-alert" aria-labelledby="form-alert-title" aria-describedby="form-alert-message">
+            <span class="alert-dialog__icon" data-alert-icon aria-hidden="true">✓</span>
+            <p class="section-kicker">Formulario de contacto</p>
+            <h2 id="form-alert-title" data-alert-title>Formulario validado</h2>
+            <p id="form-alert-message" data-alert-message></p>
+            <button class="alert-dialog__button" type="button" data-alert-close>Entendido</button>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>Mamani Apaza Santos Luis</strong> · Ingeniería de Sistemas</p>
+        <a href="index.html">Volver al inicio</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de proyectos académicos de Santos Luis Mamani Apaza.">
+    <title>Proyectos | Santos Luis Mamani Apaza</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+    <header class="page-header">
+        <div class="page-header__top">
+            <a class="page-brand" href="index.html">Santos Luis Mamani Apaza <span>CV profesional</span></a>
+            <label class="page-theme-toggle" for="theme-toggle">
+                <input id="theme-toggle" type="checkbox" aria-label="Cambiar entre modo claro y oscuro">
+                <span>Modo oscuro</span>
+            </label>
+        </div>
+        <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menú de navegación">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="page-nav" id="primary-navigation" aria-label="Navegacion principal">
+            <a href="index.html">Inicio</a>
+            <a href="trayectoria.html">Trayectoria</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a class="active" href="proyectos.html" aria-current="page">Proyectos</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="contenido" class="page-main">
+        <header class="page-title">
+            <p class="section-kicker">Portafolio académico</p>
+            <h1>Proyectos destacados</h1>
+            <p>Aplicaciones de programación, bases de datos y comunicación entre sistemas.</p>
+        </header>
+
+        <section class="project-tools" aria-label="Buscar y filtrar proyectos">
+            <label class="project-search" for="project-search">Buscar proyectos
+                <input id="project-search" type="search" placeholder="Ej. Java, finanzas, web..." autocomplete="off">
+            </label>
+            <div class="project-filters" role="group" aria-label="Filtrar proyectos por categoría">
+                <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">Todos</button>
+                <button type="button" class="filter-button" data-filter="java" aria-pressed="false">Java</button>
+                <button type="button" class="filter-button" data-filter="web" aria-pressed="false">Web</button>
+                <button type="button" class="filter-button" data-filter="networking" aria-pressed="false">Redes</button>
+            </div>
+            <p id="project-count" class="project-count" role="status" aria-live="polite">Se muestran 3 proyectos.</p>
+        </section>
+
+        <section class="project-grid project-grid--featured" id="project-list" aria-label="Proyectos destacados">
+            <article class="card project-card" data-category="java" data-search="sistema finanzas java mysql ia inversiones">
+                <span class="tag">Java - MySQL - IA</span>
+                <h2>Sistema de Finanzas</h2>
+                <p>Sistema de escritorio para administrar ingresos, gastos e inversiones, con un módulo de recomendaciones personalizadas mediante IA.</p>
+                <p class="muted">Java 11 - JavaFX - MySQL - JDBC - API de Gemini</p>
+                <details>
+                    <summary>Ver mi aporte</summary>
+                    <p>Participé en el desarrollo orientado a objetos y en el almacenamiento de información en SQL.</p>
+                </details>
+            </article>
+
+            <article class="card project-card" data-category="web" data-search="veterinaria petshop web sql mysql clientes mascotas">
+                <span class="tag">Web - SQL</span>
+                <h2>Veterinaria PetShop</h2>
+                <p>Sistema de gestión para clientes y mascotas, respaldado por una base de datos relacional y una interfaz web.</p>
+                <p class="muted">MySQL - HTML - CSS - JavaScript</p>
+                <details>
+                    <summary>Ver mi aporte</summary>
+                    <p>Diseñé la base de datos y organicé la información de clientes, mascotas y servicios.</p>
+                </details>
+            </article>
+
+            <article class="card project-card" data-category="networking" data-search="transferencia archivos sockets ubuntu java tcp">
+                <span class="tag">Sockets - Ubuntu</span>
+                <h2>Transferencia de archivos</h2>
+                <p>Arquitectura cliente-servidor para transferir archivos mediante sockets TCP en un entorno multiproceso.</p>
+                <p class="muted">Java - TCP - Ubuntu</p>
+                <details>
+                    <summary>Ver mi aporte</summary>
+                    <p>Trabajé en la documentación y el diseño de la solución cliente-servidor.</p>
+                </details>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>Mamani Apaza Santos Luis</strong> - Ingeniería de Sistemas</p>
+        <a href="contacto.html">Contactar</a>
+    </footer>
+</body>
+</html>

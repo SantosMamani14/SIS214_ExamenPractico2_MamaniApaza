@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Evidencias multimedia del portafolio de Santos Luis Mamani Apaza.">
+    <title>Multimedia | Santos Luis Mamani Apaza</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+    <header class="page-header">
+        <div class="page-header__top">
+            <a class="page-brand" href="index.html">Santos Luis Mamani Apaza <span>CV profesional</span></a>
+            <label class="page-theme-toggle" for="theme-toggle">
+                <input id="theme-toggle" type="checkbox" aria-label="Cambiar entre modo claro y oscuro">
+                <span>Modo oscuro</span>
+            </label>
+        </div>
+        <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menú de navegación">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="page-nav" id="primary-navigation" aria-label="Navegacion principal">
+            <a href="index.html">Inicio</a>
+            <a href="trayectoria.html">Trayectoria</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a class="active" href="multimedia.html" aria-current="page">Multimedia</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="contenido" class="page-main">
+        <header class="page-title">
+            <p class="section-kicker">Evidencias</p>
+            <h1>Portafolio multimedia</h1>
+            <p>Material visual y audiovisual relacionado con mis proyectos académicos.</p>
+        </header>
+
+        <section class="media-grid media-grid--portfolio" id="recursos-multimedia" aria-label="Recursos multimedia">
+            <article class="card media-card">
+                <h2>Imagen del proyecto</h2>
+                <figure>
+                    <img src="assets/images/sistema-finanzas.png" alt="Captura del panel de control del Sistema Inteligente de Administración de Finanzas" loading="lazy">
+                    <figcaption>Panel de control del Sistema Inteligente de Administración de Finanzas.</figcaption>
+                </figure>
+            </article>
+
+            <article class="card media-card">
+                <h2>Presentación en audio</h2>
+                <figure>
+                    <audio controls preload="metadata" aria-label="Presentación en audio de Santos Luis Mamani Apaza">
+                        <source src="assets/audio/presentacion.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio HTML5.
+                    </audio>
+                    <figcaption>Breve presentación personal.</figcaption>
+                </figure>
+            </article>
+
+            <article class="card media-card">
+                <h2>Demostración en video</h2>
+                <figure>
+                    <video controls poster="assets/images/sistema-finanzas.png" preload="metadata" aria-label="Video de demostración del proyecto">
+                        <source src="assets/video/proyecto.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                    <figcaption>Demostración del Sistema de Finanzas.</figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>Mamani Apaza Santos Luis</strong> - Ingeniería de Sistemas</p>
+        <a href="contacto.html">Contactar</a>
+    </footer>
+</body>
+</html>
