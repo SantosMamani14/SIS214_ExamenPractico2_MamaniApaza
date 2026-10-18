@@ -31,9 +31,9 @@
     --action-bg: #477a45;
     --action-hover: #31543b;
     --action-text: #ffffff;
-    --highlight-bg: #cdf69c;
-    --highlight-border: #7bb45a;
-    --highlight-text: #1e3425;
+    --highlight-bg: linear-gradient(135deg, var(--color-primary-dark), var(--hero-end));
+    --highlight-border: #cdf69c;
+    --highlight-text: #ffffff;
 
     --hero-text: #ffffff;
     --hero-muted: #eff8e9;
@@ -81,9 +81,9 @@ body:has(#theme-toggle:checked) {
     --action-bg: #477a45;
     --action-hover: #5b9252;
     --action-text: #ffffff;
-    --highlight-bg: #24504c;
+    --highlight-bg: linear-gradient(135deg, var(--color-primary-dark), var(--hero-end));
     --highlight-border: #71c9a5;
-    --highlight-text: #eff8f2;
+    --highlight-text: #ffffff;
 
     --hero-text: #ffffff;
     --hero-muted: #edf3f2;
