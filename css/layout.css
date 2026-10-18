@@ -708,7 +708,7 @@ main {
 /* Mobile-first breakpoints: tablet 768-1024px, desktop above 1024px. */
 body.has-js .menu-toggle {
     display: flex;
-    margin: 0.45rem 0 0 auto;
+    margin: 0.45rem auto 0 0;
 }
 
 body.has-js .page-nav {
